@@ -14,7 +14,7 @@ if ENV_FILE:
 
 def create_app():
     app = Flask(__name__)
-    client = MongoClient("mongodb+srv://rythom:" + urllib.parse.quote("Rhythm@123") + "@gtcl.3dqqy7u.mongodb.net/test")
+    client = MongoClient("MONGODB_URI")
     app.db = client.gt
 
     app.secret_key = env.get("APP_SECRET_KEY")
