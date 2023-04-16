@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/assets/css/dash_style.css">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XXXXXXX" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+
+            <span class="logo_name">GreenTracker</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/dash">
+                    <i class="bi-speedometer2"></i>
+                    <span class="link-name">dashboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="bi-trophy"></i>
+                    <span class="link-name">Challenges</span>
+                </a></li>
+                <li><a href="/donate">
+                    <i class="fas fa-donate"></i>
+                    <span class="link-name">Donate</span>
+                </a></li>
+                <li><a href="/shop">
+                    <i class="bi-shop"></i>
+                    <span class="link-name">Buy Coins</span>
+                </a></li>
+
+                <li><a href="sustainable">
+                    <i class="bi-twitter"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="/logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="bi-shop"></i>
+                    <span class="text">Shop</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span class="text">Current Rate</span>
+                        <span class="number">1$ = 1 Coin</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="fas fa-donate"></i>
+                        <span class="text"></span>
+                        <span class="number" style="font-size: 25px">Coins Bought From here Can be donated to make Challenges.</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span class="text"></span>
+                        <span class="number" style="font-size: 29px">Make Sure to Invite Your Friends Too.</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="bi-currency-dollar"></i>
+                    <div class="container-fluid">
+
+<form class="form", method="post", action="/buy">
+    <div class="row">
+        <div class='col w-100'>
+        <input class='form-control' type='text' name="shop_input">
+      </div>
+
+        <button class='btn btn-primary' type="submit">Submit</button>
+    </div>
+        </form>
+  </div>
+                </div>
+
+
+            </div>
+        </div>
+        *Do Not Enter Alpabets. It Will Not Work. Dont Be a Fool, <a href="https://www.youtube.com/watch?v=9Deg7VrpHbM">Stop It, Get Some Help</a>
+    </section>
+
+    <<script src="/static/assets/js/dash.js"></script>
+</body>
+</html>
