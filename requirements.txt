@@ -1,5 +1,5 @@
 pymongo[srv]
 Authlib~=1.2.0
-python-dotenv~=1.0.0
+python-dotenv
 Flask~=2.2.3
 gunicorn
