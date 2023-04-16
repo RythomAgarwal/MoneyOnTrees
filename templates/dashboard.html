@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/assets/css/dash_style.css">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XXXXXXX" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+
+            <span class="logo_name">Paise On Tree</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/dash">
+                    <i class="bi-speedometer2"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="/challenges">
+                    <i class="bi-trophy"></i>
+                    <span class="link-name">Challenges</span>
+                </a></li>
+                <li><a href="/donate">
+                    <i class="fas fa-donate"></i>
+                    <span class="link-name">Donate</span>
+                </a></li>
+                <li><a href="/shop">
+                    <i class="bi-shop"></i>
+                    <span class="link-name">Buy Coins</span>
+                </a></li>
+
+                <li><a href="https://twitter.com/intent/tweet
+?url=http%3A%2F%2Frupiyaontree.co%2F
+&text=I%2C+Just+Used+This+Amazing+Tool.+Which+helps+in+creating+a+sustainable+environment
+&hashtags=sustainbility,nature,earth,tech,hackathon">
+                    <i class="bi-twitter"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="/logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+
+
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="bi-speedometer2"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                    <i class="fas fa-wallet"></i>
+                        <span class="text">Balance</span>
+                        <span class="number">{{ coin_balance }}</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="fas fa-donate"></i>
+                        <span class="text">Donated</span>
+                        <span class="number">{{ donated_coins }}</span>
+                    </div>
+                    <div class="box box3">
+                    <i class="fas fa-smog"></i>
+                        <span class="text">Tons of Pollution Saved</span>
+                        <span class="number">{{ donated_coins / 50 }}</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <<script src="/static/assets/js/dash.js"></script>
+</body>
+</html>
